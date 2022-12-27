@@ -997,7 +997,6 @@ header nav .form i {
 }
 
 .Pricing .container .plans .plan ul {
-    /* text-align: center; */
     border-bottom: 1px solid var(--maincolor1);
 }
 
@@ -1027,9 +1026,9 @@ header nav .form i {
     border-radius: 4px;
 }
 
-.clear {
+/* .clear {
     clear: both;
-}
+} */
 
 .Pricing .contact-text {
     text-align: center;
