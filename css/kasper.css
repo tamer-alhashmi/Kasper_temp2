@@ -692,6 +692,8 @@ header nav .form i {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .stats .container .box {
@@ -709,7 +711,7 @@ header nav .form i {
 
 @media (min-width: 768px) {
     .stats .container .box {
-        flex-basis: 50%;
+        flex-basis: 45%;
     }
 
 }
@@ -949,7 +951,7 @@ header nav .form i {
 .Pricing .container .plans {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 8%;
+    gap: 40px;
 }
 
 .Pricing .container .plans .cont-info {
