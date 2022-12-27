@@ -242,7 +242,7 @@ header nav .form i {
 .landing {
     min-height: 100vh;
     background-color: #2b2b2b;
-    background-image: url(/photos/landing.jpg);
+    background-image: url(photos/landing.jpg);
     background-size: cover;
     position: relative;
     transition: 0.5s;
@@ -251,7 +251,7 @@ header nav .form i {
 
 @media (max-width: 767px) {
     .landing {
-        background-image: url(/photos/Amp-Landing-Cover.jpg) !important;
+        background-image: url(photos/Amp-Landing-Cover.jpg) !important;
         transition: 0.5s;
     }
 }
@@ -421,7 +421,7 @@ header nav .form i {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
     height: 600px;
-    background-image: url(/photos/Grid-Template-BG.jpg);
+    background-image: url(photos/Grid-Template-BG.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -673,7 +673,7 @@ header nav .form i {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
     text-align: center;
-    background-image: url(/photos/Stats\ BG.jpg);
+    background-image: url(photos/Stats\ BG.jpg);
     background-size: cover;
     position: relative;
 }
@@ -883,7 +883,7 @@ header nav .form i {
 .quote {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
-    background-image: url(/photos/Quote-BG.jpg);
+    background-image: url(photos/Quote-BG.jpg);
     background-size: cover;
     position: relative;
     text-align: center;
@@ -1050,7 +1050,7 @@ header nav .form i {
 .Subscribe {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
-    background-image: url(/photos/Grid-Template-BG.jpg);
+    background-image: url(photos/Grid-Template-BG.jpg);
     background-size: cover;
     position: relative;
     color: white;
@@ -1235,7 +1235,7 @@ header nav .form i {
 .footer {
     padding-top: calc(var(--section-padding) / 2);
     padding-bottom: calc(var(--section-padding) / 2);
-    background-image: url(/photos/Grid-Template-BG.jpg);
+    background-image: url(photos/Grid-Template-BG.jpg);
     background-size: cover;
     position: relative;
     color: white;
