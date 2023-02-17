@@ -1,4 +1,6 @@
 /* Start Variables */
+
+
 :root {
     --maincolor1: #19c8fa;
     --BG-overlay: #19c9fa44;
@@ -6,6 +8,13 @@
     --section-padding: 100px;
     --section-background: #f6f6f6;
     --transparent-color: rgb(25 200 250 / 48%);
+    --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+    --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+    --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+    --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+    --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
 }
 
 /* End Variables */
@@ -27,6 +36,7 @@ html {
 /* default Body style */
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: var(--font-size-base);
 }
 
 ul {
@@ -35,9 +45,10 @@ ul {
 
 /* default Container style */
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 120px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    width: min(90%, 1200px);
+    /* margin: 0 120px; */
     margin-inline: auto;
 }
 
@@ -88,15 +99,16 @@ ul {
 
 .main-heading h2 {
     font-weight: normal;
-    font-size: 40px;
+    font-size: var(--font-size-xxl);
     position: relative;
     margin-bottom: 70px;
     text-transform: uppercase;
+    color: #212121;
 }
 
 .main-heading h2::before {
     content: '';
-    width: 120px;
+    width: max(120px, 18svw);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -119,8 +131,8 @@ ul {
 }
 
 .main-heading p {
-    width: 500px;
-    max-width: 100%;
+    width: min(400px, 90%);
+    /* max-width: 100%; */
     margin: 0 auto 100px;
     line-height: 2;
     color: var(--secondary-color);
@@ -944,6 +956,7 @@ header nav .form i {
 .Pricing .container .plans {
 display: flex;
 justify-content: center;
+gap: 20px;
 flex-wrap: wrap;
 }
 @media (max-width: 767px){
@@ -955,39 +968,47 @@ flex-wrap: wrap;
 .Pricing .container .plans .plan {
     background-color: #19c8fa0f;
     text-align: center;
-    min-width: 300px;
-    margin: 10px;
+    /* flex-basis: 100%; */
+    width: min(320px, 100%);
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ddd;
 }
 
 .Pricing .container .plans .plan .head {
-    padding: 40px 20px;
-    border-top: 1px solid var(--maincolor1);
+    padding: 30px 20px;
+    /* border-top: 1px solid var(--maincolor1); */
     border-bottom: 1px solid var(--maincolor1);
+    background-color: #067d9e6c;
 }
 
 .Pricing .container .plans .plan .head h3 {
-    font-weight: normal;
-    margin-bottom: 20px;
+    /* font-weight: bold; */
+    margin-bottom: 10px;
     text-transform: uppercase;
+    padding-bottom: 20px;
+    font-size: var(--font-size-lg);
+    font-family: fantasy;
+    letter-spacing: 2px;
+    color: #212121;
 }
 
 .Pricing .container .plans .plan .head span {
-    font-size: 60px;
+    font-size: var(--font-size-md);
     font-weight: bold;
 }
 
 .Pricing .container .plans .plan .head span::before {
     content: '$';
-    font-size: 25px;
+    font-size: var(--font-size-sm);
     position: relative;
-    top: -40px;
-    margin-right: 15px;
+    top: -20px;
+    margin-right: 0px;
     font-weight: normal;
 }
 
 .Pricing .container .plans .plan .head span::after {
     content: '/MO';
-    font-size: 25px;
+    font-size: var(--font-size-sm);
     position: relative;
     right: -15px;
 }
@@ -998,8 +1019,10 @@ flex-wrap: wrap;
 }
 
 .Pricing .container .plans .plan ul li {
-    padding: 20px;
+    padding: 10px 20px;
     position: relative;
+    font-size: var(--font-size-sm);
+    margin-top: 20px;
 }
 
 .Pricing .container .plans .plan ul li:not(:last-child)::after {
@@ -1012,21 +1035,23 @@ flex-wrap: wrap;
     transform: translateX(-50%);
     bottom: 0;
 }
-
+.Pricing .foot {
+    margin: 20px auto;
+}
 .Pricing .container .plans .plan .foot a {
     display: block;
-    padding: 20px 20px;
+    padding: 4px 10px;
     text-decoration: none;
     border: 1px solid var(--maincolor1);
     width: fit-content;
-    margin: 30px auto;
+    margin: 10px auto;
     border-radius: 4px;
 }
 
 .Pricing .contact-text {
     text-align: center;
     margin: 50px auto 20px;
-    font-size: 20px;
+    font-size: var(--font-size-md);
 }
 
 .Pricing .contact-link {
@@ -1035,7 +1060,7 @@ flex-wrap: wrap;
     margin: 20px auto;
     background-color: var(--maincolor1);
     color: white;
-    padding: 15px 30px;
+    padding: 4px 10px;
     text-decoration: none;
 }
 
@@ -1146,12 +1171,12 @@ flex-wrap: wrap;
 }
 
 .contact .content form {
-    flex-basis: 70%;
+    width: min(200px, 100%);
 }
 
 .contact .content form .main-input {
     display: block;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 30px;
     width: 100%;
 }
@@ -1168,8 +1193,9 @@ flex-wrap: wrap;
     display: flex;
     background-color: var(--maincolor1);
     color: white;
-    padding: 20px;
+    padding: 4px 8px;
     text-transform: uppercase;
+    /* margin-left: auto; */
     border: none;
     cursor: pointer;
 }
